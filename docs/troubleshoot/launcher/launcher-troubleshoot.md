@@ -26,3 +26,28 @@ Disable debug mode when you are not troubleshooting. Running Zowe Launcher in de
   By default debug mode is disabled, so the `ZLDEBUG` is set to `OFF`. To disable debug mode remove the line or set `ZLDEBUG` to `OFF`.
    
 3. Restart ZWESLSTC Started Task.
+
+## Enable Zowe Secure Services (zss) Debug Mode
+
+To collect all available additional debug information about the Zowe Secure Services (zss) server component, the following lines can be added to `zowe.yaml`.  Each of the `logLevels:` entries represents a different piece of zss data that can be logged and you can include as many of these as you need to collect additional log data for.  
+
+```
+components:
+    zss:
+        logLevels:
+            _zss.mvdserver: 5
+            _zss.ctds: 5
+            _zss.security: 5
+            _zss.unixfile: 5
+            _zss.dataservice: 5
+            _zss.apimlstorage: 5
+            _zss.jwk: 5
+            _zss.traceLevel: 5
+            _zss.fileTrace: 5
+            _zss.socketTrace: 5
+            _zss.httpParseTrace: 5
+            _zss.httpHeadersTrace: 5
+            _zss.httpSocketTrace: 5
+            _zss.httpCloseConversationTrace: 5
+            _zss.httpAuthTrace: 5
+```
