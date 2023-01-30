@@ -11,11 +11,11 @@ Review details of certificate management in Zowe API Mediation Layer including r
     - [Service registration to Discovery Service on localhost](#service-registration-to-discovery-service-on-localhost)
 + [Zowe runtime on z/OS](#zowe-runtime-on-zos)
     - [Import the local CA certificate to your browser](#import-the-local-ca-certificate-to-your-browser)
-    - [Generate a keystore and truststore for a new service on z/OS](#generate-a-keystore-and-truststore-for-a-new-service-on-z-os)
-    - [Add a service with an existing certificate to API ML on z/OS](#add-a-service-with-an-existing-certificate-to-api-ml-on-z-os)
+    - [Generate a keystore and truststore for a new service on z/OS](#generate-a-keystore-and-truststore-for-a-new-service-on-zos)
+    - [Add a service with an existing certificate to API ML on z/OS](#add-a-service-with-an-existing-certificate-to-api-ml-on-zos)
     - [Procedure if the service is not trusted](#procedure-if-the-service-is-not-trusted)
-+ [API ML truststore and keystore](#api-ml-truststore-and-keystore)    
-+ [API ML SAF Keyring](#api-ml-saf-keyring)    
++ [API ML truststore and keystore](#)    
++ [API ML SAF Keyring](   
 ## Running on localhost
 
 ### How to start API ML on localhost with full HTTPS
