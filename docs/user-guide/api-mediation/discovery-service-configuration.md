@@ -75,4 +75,42 @@ As an application developer who wants to run Zowe, set the following parameters 
                   serviceIdPrefixReplacer: ca*,bcm
     ```
 
-3. Restart Zowe&trade.
+## Eureka configuration
+
+The Discovery Service contains a configuration for implementing the client-side service discovery and for defining a Eureka Server for service registry. This configuration is presented in the following codeblock:
+
+```yaml
+eureka:
+    instance:
+        hostname: ${apiml.service.hostname}
+        ipAddress: ${apiml.service.ipAddress}
+        port: ${server.port}
+        securePort: 0
+        nonSecurePortEnabled: true
+        securePortEnabled: false
+        preferIpAddress: ${apiml.service.preferIpAddress}
+        statusPageUrl: http://${apiml.service.hostname}:${apiml.service.port}/application/info
+        healthCheckUrl: http://${apiml.service.hostname}:${apiml.service.port}/application/health
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        region: default
+        serviceUrl:
+            defaultZone: ${apiml.discovery.allPeersUrls}
+    server:
+        useReadOnlyResponseCache: false
+```
+
+* **eureka.client.registerWithEureka**  
+
+    Setting this property as `true` causes the inbuilt client to attempt registration with the Eureka server when the server starts. 
+
+* **eureka.client.registerWithEureka**  
+
+    Setting this propaerty to `true` causes the inbuilt client to attempt to fetch the Eureka registry. 
+
+* **eureka.client.serviceUrl.defaultZone**  
+
+    This paramenter specifies a fallback value that provides the Eureka service URL for any client that does not express a preference. This parameter serves as a useful default.
+
+For more information about other Eureka parameters, see the [Spring Cloud Netflix Eureka documentation](https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html).
