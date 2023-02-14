@@ -166,3 +166,11 @@ For detailed contribution guidelines, see the following documents:
 |  | X |  |  | Minimum 2 active maintainers with publishing rights |
 |  |  | X |  | Provide a reproducible SHA checksum (at least 256 bit) for each release |
 |  | X |  |  | GitHub issues should be timely acknowledged  |
+
+
+## Security
+
+| Item | Required | Best Practice | Conformant | Criteria |
+|-----|-----|-----|-----|-----|
+| | X | | | Must be design with security in mind (secure by default) |
+| | X | | | Must implement secure protocols (HTTPS or SFTP) |
