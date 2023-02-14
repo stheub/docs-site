@@ -106,7 +106,7 @@ For detailed contribution guidelines, see the following documents:
 | Item | Required | Best Practice | Conformant | Criteria |
 |-----|-----|-----|-----|-----|
 |  | X |  |  | Follow a partially-fixed versioning strategy based on major version - Minor and patch version can be independent  |
-|  |  | X |  | Provide a bundle that contains all SDKs AND name it `zowe-<languange>-sdk-bundle`. Doc: describe what's in it |
+|  |  | X |  | Provide a bundle that contains all SDKs AND name it `zowe-<languange>-sdk-bundle`. Doc: describe contents and list of relevant packages |
 
 ## Documentation
 
