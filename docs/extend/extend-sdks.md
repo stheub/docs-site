@@ -16,7 +16,7 @@ For detailed contribution guidelines, see the following documents:
 
 | Item | Required | Best Practice | Conformant | Criteria |
 |-----|-----|-----|-----|-----|
-|  | X |  |  | Must name your package(s) in the following format: `<service>-for-zowe-sdk` |
+|  | X |  |  | Must name your package(s) in the following format: `<service>-for-zowe-<language>-sdk` |
 
 ## Documentation
 
@@ -49,10 +49,9 @@ For detailed contribution guidelines, see the following documents:
 
 | Item | Required | Best Practice | Conformant | Criteria |
 |-----|-----|-----|-----|-----|
-|  |  | X |  | Sample SDK |
 |  | X |  |  | Load Zowe v2 configuration |
 |  |  | X |  | Audit third party dependencies for vulnerabilities with tools corresponding to the programming language |
-| | X |  | | Ability to install, build, and package from source |
+| | X |  | | If open source, provide the ability to install, build, and package from source |
 
 
 ## Functionality
@@ -102,6 +101,13 @@ For detailed contribution guidelines, see the following documents:
 |  |  | X |  | Issue triage |
 |  |  | X |  | CodeQL |
 
+## Versioning Strategy
+
+| Item | Required | Best Practice | Conformant | Criteria |
+|-----|-----|-----|-----|-----|
+|  | X |  |  | Follow a partially-fixed versioning strategy based on major version - Minor and patch version can be independent  |
+|  |  | X |  | Provide a bundle that contains all SDKs AND name it `zowe-<languange>-sdk-bundle`. |
+
 ## Documentation
 
 | Item | Required | Best Practice | Conformant | Criteria |
@@ -112,7 +118,6 @@ For detailed contribution guidelines, see the following documents:
 |  | X |  |  | Disclose all 3rd party dependencies using a Software Bill of Materials (SBOM) |
 |  | X |  |  | Provide a common location for extenders to publish their API docs (readthedocs in zowe-docs) |
 |  | X |  |  | Provide API Documentation in the common location (readthedocs in zowe-docs) |
-
 
 
 ## Testing
@@ -151,6 +156,8 @@ For detailed contribution guidelines, see the following documents:
 
 | Item | Required | Best Practice | Conformant | Criteria |
 |-----|-----|-----|-----|-----|
+|  |  | X |  | Sample SDK |
+| | X |  | | Provide the ability to install, build, and package from source |
 |  |  | X |  | Audit third party dependencies for vulnerabilities with tools corresponding to the programming language |
 |  | X |  |  | Must list/identify all licenses used by the SDK |
 |  | X |  |  | Must not include GNU Licenses on third party dependencies |
