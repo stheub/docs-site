@@ -101,10 +101,11 @@ For detailed contribution guidelines, see the following documents:
 |  |  | X |  | Issue triage |
 |  |  | X |  | CodeQL |
 
-## Versioning Strategy
+## Versioning
 
 | Item | Required | Best Practice | Conformant | Criteria |
 |-----|-----|-----|-----|-----|
+| | X | | | Must follow [Semantic Versioning](semver.org) guidelines |
 |  | X |  |  | Follow a partially-fixed versioning strategy based on major version - Minor and patch version can be independent  |
 |  |  | X |  | Provide a bundle that contains all SDKs AND name it `zowe-<languange>-sdk-bundle`. Doc: describe contents and list of relevant packages |
 
