@@ -56,7 +56,7 @@
 
 * **customMetadata.apiml.gatewayAuthEndpoint**
 
-  Specifies the Gateway authentication endpoint used by the ZAAS Client configuration. The default value is `/api/v1/gateway/auth`. For more information about ZAAS Client, see [ZAAS Client](zaas-client.md)
+  Specifies the Gateway authentication endpoint used by the ZAAS Client configuration. The default value is `/api/v1/gateway/auth`. For more information about ZAAS Client, see [ZAAS Client](/docs/extend/extend-apiml/zaas-client.md)
 
   **Note:** If you use the Spring enabler, use the following parameter name:
 
@@ -64,7 +64,7 @@
 
 * **customMetadata.apiml.gatewayPort**
 
-  Specifies the Gateway port used by the ZAAS Client configuration. The default value is `10010`. For more information about ZAAS Client, see [ZAAS Client](api-mediation-security.md#zaas-client).
+  Specifies the Gateway port used by the ZAAS Client configuration. The default value is `10010`. For more information about ZAAS Client, see [ZAAS Client](/docs/extend/.
 
   **Note:** If you use the Spring enabler, use the following parameter name:
 
