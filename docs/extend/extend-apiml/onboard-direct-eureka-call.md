@@ -371,5 +371,5 @@ Ensure that you successfully onboarded a service with the API Mediation Layer.
 ## External Resources
 
  - https://blog.asarkar.org/technical/netflix-eureka/
- - https://medium.com/@fahimfarookme/the-mystery-of-eureka-health-monitoring-5305e3beb6e9
+ - https:medium.com/@fahimfarookme/the-mystery-of-eureka-health-monitoring-fd05fe757928
  - https://github.com/Netflix/eureka/wiki/Eureka-REST-operations
