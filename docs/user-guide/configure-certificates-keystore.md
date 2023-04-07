@@ -8,7 +8,7 @@ Using USS PKCS12 certificates is useful for proof of concept projects using a se
 
 When Zowe is launched details for the PKCS12 certificate used are specified in the `zowe.yaml` section `certificates`.  This contains information for the certificate name and its location, together with the truststore location.  
 
-The two most common scenario for using a PKCS12 certtificate are where you have been given an existing certificate and wish to configure Zowe to use it, or else you do not have a certificate and wish to generate a new one.  The `zwe init certificate` command supports both scenarios.  The input parameters that control certificate configuration
+The two most common scenario for using a PKCS12 certificate are where you have been given an existing certificate and wish to configure Zowe to use it, or else you do not have a certificate and wish to generate a new one.  The `zwe init certificate` command supports both scenarios.  The input parameters that control certificate configuration
 are specified in the section `zowe.setup.certificates`
 
 ## Create a self signed PKCS12 certificate
@@ -48,7 +48,7 @@ zowe:
 
 To assist with updating `zowe.yaml` the values to generate a self signed PKCS12 certificate are included in the section beginning ` # >>>> Certificate setup scenario 1`.  Other certificate scenarios lower down in the `zowe.yaml` file are commented out.
 
-The `zwe init certificate` command will generate a certificate based on the `zowe.yaml` values in the `zowe.setup.certificate` section.  These certificate values used at runtime are referenced in the `zowe.yanl` section `zowe.certificates`. Specify `--update-config` for the `zwe` command to update the runtime `zowe.certificates` section to reference the generated certificate generated from the `zowe.setup.certificate`. 
+The `zwe init certificate` command will generate a certificate based on the `zowe.yaml` values in the `zowe.setup.certificate` section.  These certificate values used at runtime are referenced in the `zowe.yaml` section `zowe.certificates`. Specify `--update-config` for the `zwe` command to update the runtime `zowe.certificates` section to reference the generated certificate generated from the `zowe.setup.certificate`. 
 
 The follow command output shows generation of a self signed PKCS12 certificate using the default values.  Some detailed output messages have been omitted, but the flow can be viewed that creates the CA, creates the keystore and adds the CA to it,  create the certificate and adds that to the keystore,  creates the truststore,  changes directory permissions to restrict access to the private key.
 
