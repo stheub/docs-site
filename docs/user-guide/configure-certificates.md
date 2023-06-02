@@ -5,6 +5,8 @@ As a system administrator, review this article to learn about the key concepts o
 Zowe uses a certificate to encrypt data for communication across secure sockets. The certificate used is specified in the `zowe.certificates` section of the `zowe.yaml`, and can either be a `PKCS12` certificate held in a USS keystore `.p12` file, or a `JCERACKS` certificate held in a keyring.  
 
 Zowe provides the ability to generate a certificate using the `zwe init certificate` command. Zowe can also be configured to use an existing certificate that might be provided by the security team in a z/OS customer shop.
+
+**Note** For information about how to use certiciates to start API ML on localhost, as well as management of certificates for API Mediation Layer when installing Zowe runtime on z/OS, see [Certificate management in Zowe API Mediation Layer](../extend/extend-apiml/certificate-management-in-zowe-apiml.md).
  
 ## Trust store
 
