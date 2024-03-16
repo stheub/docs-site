@@ -427,7 +427,7 @@ These configurations can be used under the `components.gateway` section:
  Set this parameter to `true` to enable the client certificate authentication functionality through ZSS.
 - **`apiml.security.x509.externalMapperUrl`**  
  Defines the URL where Gateway can query the mapping of client certificates.
-- **`apiml.security.auth.provider`**  
+- **`apiml.security.authorization.provider`**  
  Defines the authentication provider used by the API Gateway.
 - **`apiml.security.authorization.endpoint.url`**  
  Defines the URL to the authorization endpoint. This endpoint tells Gateway if a user has a particular permission on SAF profile. For example, permission to the `APIML.SERVICES` profile of `ZOWE` class.
