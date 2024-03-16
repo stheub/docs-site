@@ -32,11 +32,11 @@ strictly define a provider. If verification is disabled, select the `endpoint` o
 
 **Examples:**
 ```
-components.gateway.apiml.security.authorization.endpoint.url: endpoint
+components.gateway.apiml.security.authorization.provider: endpoint
 ```
 
 To configure the `endpoint` provider, add the following additional property:
-`components.gateway.apiml.security.authorization.endpoint.enabled: true`
+`components.gateway.apiml.security.authorization.provider: endpoint`
 
 `components.gateway.apiml.security.authorization.provider: native`
 
